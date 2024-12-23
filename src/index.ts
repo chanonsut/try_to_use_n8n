@@ -93,6 +93,32 @@ router.post('/Temp/hellpost', async (request : Request) => {
 });
 
 
-addEventListener('fetch', event =>
-		event.respondWith(router.handle(event.request))
-)
+addEventListener("fetch", (event) => {
+	const request = event.request;
+	const url = new URL(request.url);
+	// if (url.pathname.startsWith(PROXY_ENDPOINT)) {
+	if (request.method === "OPTIONS") {
+	  // Handle CORS preflight requests
+	  event.respondWith(handleOptions(request));
+	} else if (
+	  request.method === "GET" ||
+	  request.method === "HEAD" ||
+	  request.method === "PUT" ||
+	  request.method === "DELETE" ||
+	  request.method === "POST"
+	) {
+	  // Handle requests to the API server
+	  event.respondWith(router.handle(request));
+	} else {
+	  event.respondWith(
+		new Response(null, {
+		  status: 405,
+		  statusText: "Method Not Allowed",
+		})
+	  );
+	}
+	// } else {
+	//   // Serve demo page
+	//   event.respondWith(rawHtmlResponse(DEMO_PAGE));
+	// }
+  });
