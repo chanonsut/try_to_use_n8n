@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "worker-typescript-template" generated at 2024-12-23T09:11:15.940Z.

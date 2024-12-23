@@ -1,7 +1,7 @@
 {
-	"name": "api-aicp",
+	"name": "try_to_use_n8n",
 	"version": "1.0.0",
-	"description": "API AICP",
+	"description": "Test deploy",
 	"scripts": {
 		"dev": "wrangler dev --local",
 		"publish": "npx wrangler publish",
