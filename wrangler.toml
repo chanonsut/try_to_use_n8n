@@ -1,0 +1,18 @@
+main = "./src/index.ts"
+name = "worker-typescript-template"
+compatibility_date = "2023-01-27"
+node_compat = true
+
+[vars]
+ENVIRONMENT = 'dev'
+
+[env.staging]
+name = "typescript-staging"
+vars = { ENVIRONMENT = "staging" }
+route = "typescript-staging.prachakij.workers.dev/Temp/*"
+
+[env.production]
+name = "typescript-api"
+vars = { ENVIRONMENT = "production"}
+route = "agilesoftgroup.com/Temp/*"
+logpush = true
