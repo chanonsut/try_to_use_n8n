@@ -90,7 +90,7 @@ router.post('/Temp/hellpost', async (request : Request) => {
 	};
 	return await responseSuccess(data, 200);
 
-});
+}); 
 
 
 addEventListener("fetch", (event) => {

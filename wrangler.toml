@@ -9,10 +9,10 @@ ENVIRONMENT = 'dev'
 [env.staging]
 name = "typescript-staging"
 vars = { ENVIRONMENT = "staging" }
-route = "typescript-staging.prachakij.workers.dev/Temp/*"
+route = "chanon-suttana-pkg.workers.dev/Temp/*"
 
 [env.production]
 name = "typescript-api"
 vars = { ENVIRONMENT = "production"}
-route = "agilesoftgroup.com/Temp/*"
+route = "chanon-suttana-pkg.workers.dev/Temp/*"
 logpush = true
