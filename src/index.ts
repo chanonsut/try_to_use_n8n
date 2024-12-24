@@ -64,7 +64,7 @@ const deCode = async (req: any) => {
 	});
   };
   
-router.use(cors(options));
+router.use(cors(options)); 
 
 router.get('/Temp/hell', async (request : Request) => {
 	const data = { 
