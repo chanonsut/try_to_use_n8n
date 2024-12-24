@@ -69,7 +69,7 @@ router.use(cors(options));
 router.get('/Temp/hell', async (request : Request) => {
 	const data = {
 		"status": 200,
-		"message": "hello",
+		"message": "hello mfk",
 	};
 	return await responseSuccess(data, 200);
 
@@ -89,7 +89,7 @@ router.post('/Temp/hellpost', async (request : Request) => {
 		"data": payload
 	};
 	return await responseSuccess(data, 200);
-
+  
 }); 
 
 
