@@ -68,7 +68,7 @@ router.use(cors(options));
 
 router.get('/Temp/hell', async (request : Request) => {
 	const data = { 
-		"status": 200,
+		"status": 200, 
 		"message": "hello mfk haha",
 	};
 	return await responseSuccess(data, 200);
