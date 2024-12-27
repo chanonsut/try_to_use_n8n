@@ -71,7 +71,7 @@ router.get('/Temp/hell', async (request : Request) => {
 		"status": 200, 
 		"message": "hello mfk haha",
 	};
-	return await responseSuccess(data, 200);
+	return await responseSuccess(data, 200); 
 
 });
 
