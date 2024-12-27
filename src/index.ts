@@ -12,6 +12,7 @@ const router = Router();
 // Create a Registry which registers the metrics
 declare let global: GlobalEnvironment;
 
+
 interface GlobalEnvironment {
 }
 
