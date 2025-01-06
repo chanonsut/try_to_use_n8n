@@ -2,6 +2,7 @@ main = "./src/index.ts"
 name = "worker-typescript-template"
 compatibility_date = "2023-01-27"
 node_compat = true
+account_id = "6a18e23bb17ffb10676cd3506b6ea52d"
 
 [vars]
 ENVIRONMENT = 'dev'
