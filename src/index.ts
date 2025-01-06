@@ -13,7 +13,7 @@ const router = Router();
 declare let global: GlobalEnvironment;
 
 
-interface GlobalEnvironment {  
+interface GlobalEnvironment {
 }
 
 const ENV_DEPLOY = ENVIRONMENT;
