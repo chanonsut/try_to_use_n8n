@@ -20,7 +20,7 @@ const ENV_DEPLOY = ENVIRONMENT;
 
 console.log("ENV_DEPLOY");
 
-console.log(ENV_DEPLOY);
+console.log(ENV_DEPLOY); 
 if (ENV_DEPLOY == 'production') {
 		console.log('production');
 		// var Auth = new ags_restauth(R_TOKEN, R_USER);
