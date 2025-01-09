@@ -18,7 +18,7 @@ interface GlobalEnvironment {
 
 const ENV_DEPLOY = ENVIRONMENT;
 
-console.log("ENV_DEPLOY"); 
+console.log("ENV_DEPLOY");
 
 console.log(ENV_DEPLOY); 
 if (ENV_DEPLOY == 'production') {
