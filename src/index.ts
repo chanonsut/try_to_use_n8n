@@ -63,7 +63,7 @@ const deCode = async (req: any) => {
 		}
 	  })();
 	});
-  };
+  }; 
    
 router.use(cors(options));
 
